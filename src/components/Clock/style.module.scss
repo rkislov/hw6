@@ -1,0 +1,37 @@
+.container {
+    display: grid;
+    grid-template-areas:
+      'name_element close_element'
+      'clock_element clock_element';
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto 1fr;
+    gap: 15px;
+  
+    .name {
+      grid-area: name_element;
+    }
+  
+    .close {
+      grid-area: close_element;
+      height: 25px;
+      width: 25px;
+      display: grid;
+      place-items: center;
+      border: 1px solid black;
+      border-radius: 100%;
+      cursor: pointer;
+    }
+  
+    .clock {
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      gap: 15px;
+      justify-content: center;
+  
+      .element {
+        font-size: 26px;
+        font-weight: bold;
+        color: black;
+      }
+    }
+  }

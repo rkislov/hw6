@@ -1,0 +1,27 @@
+.container {
+    width: 80%;
+    margin: 5vh auto;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 5vh;
+  
+    .topContainer {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+      gap: 25px;
+  
+      .refresh_btn {
+        height: 20px;
+        width: 20px;
+        object-fit: contain;
+        cursor: pointer;
+      }
+    }
+  
+    .cardContainer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+  }

@@ -1,0 +1,13 @@
+.container {
+    margin: 5vh auto;
+    width: 80%;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 2.5vh;
+  
+    .clocksContainer {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+  }

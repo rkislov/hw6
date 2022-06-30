@@ -1,0 +1,21 @@
+.card {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid black;
+    position: relative;
+    z-index: 1;
+  
+    .close {
+      height: 40px;
+      width: 40px;
+      color: red;
+      font-size: 30px;
+      font-weight: bold;
+      display: grid;
+      place-items: center;
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      cursor: pointer;
+    }
+  }
